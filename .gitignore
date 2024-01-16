@@ -63,3 +63,4 @@ out/
 
 ## Own gitignore rules
 .idea
+target
