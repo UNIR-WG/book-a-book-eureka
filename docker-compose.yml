@@ -1,0 +1,8 @@
+---
+version: "2.1"
+services:
+  book-a-book-eureka:
+    image: aleixmt/book-a-book-eureka:latest
+    ports:
+      - "0.0.0.0:8762:8761"
+    restart: unless-stopped
