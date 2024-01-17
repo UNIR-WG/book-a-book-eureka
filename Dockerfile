@@ -41,5 +41,8 @@ RUN chown 1001:1001 /app/book-a-book-eureka.jar
 # Cambia el usuario que va a ejecutar los siguientes comandos al usuario con id 1001
 USER 1001
 
+# Set the application profile in order to change the config of DB location
+ENV spring_profiles_active=prod
+
 ENTRYPOINT ["java", \
     "-jar", "book-a-book-eureka.jar"]
