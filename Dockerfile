@@ -28,7 +28,7 @@ FROM openjdk:17-oracle
 WORKDIR /app
 
 # Install necessary dependencies for running
-RUN microdnf install --nodocs -y java-17-openjdk-headless && \
+RUN microdnf install --nodocs -y java-17-openjdk-headless curl && \
     microdnf clean all
 
 # Copy the directory created in the first stage into the run container
